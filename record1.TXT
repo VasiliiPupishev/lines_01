@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "D:\PyCharm 2018.3\helpers\coverage_runner\run_coverage.py", line 34, in <module>
+    a_file.write(os.getcwd()+"\n")
+  File "C:\Users\dudya\AppData\Local\Programs\Python\Python36-32\lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 23-30: character maps to <undefined>
