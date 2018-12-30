@@ -40,9 +40,14 @@ class AddRecord:
                     raise SystemExit
                 if event.type is pygame.MOUSEBUTTONDOWN:
                     x, y = event.pos
-                    if 235 < x < 365:
-                        if 340 < y < 380:
+                    if 340 < y < 380:
+                        if 160 < x < 290:
                             return
+                        if 310 < x < 440:
+                            f = open("records.txt", 'a')
+                            if len(self.Name) == 0:
+                                self.Name = "unknown_player"
+                            f.write("\n" + self.Name + " " + str(scr))
                     if 150 < x < 450:
                         if 270 < y < 330:
                             self.write = True
@@ -52,7 +57,6 @@ class AddRecord:
                     else:
                         self.Name += chr(event.key)
                     self.draw(screen, scr)
-
 
     def draw(self, screen, scr):
         im = pygame.image.load("Materials/fonn.jpg")
@@ -72,16 +76,19 @@ class AddRecord:
             i += 28
         plate = pygame.image.load("Materials/plate.png")
         plate = pygame.transform.scale(plate, (130, 40))
-        screen.blit(plate, (235, 340))
+        screen.blit(plate, (160, 340))
+        screen.blit(plate, (310, 340))
         font = pygame.font.SysFont('arial', 25)  # name caption
         loading_caption = font.render("Back", False, (0, 0, 0))
+        screen.blit(loading_caption, (195, 347))
+        loading_caption = font.render("Write", False, (0, 0, 0))
+        screen.blit(loading_caption, (345, 347))
         text = pygame.image.load("Materials/text.jpg")
         text = pygame.transform.scale(text, (300, 60))
         screen.blit(text, (150, 270))
         font = pygame.font.SysFont('arial', 25)  # name caption
-        loading_caption = font.render("Your Score: " + str(scr), False, (255, 0, 0))
-        screen.blit(loading_caption, (180, 220))
-        screen.blit(loading_caption, (270, 347))
+        loading_caption = font.render(self.Name, False, (255, 0, 0))
+        screen.blit(loading_caption, (180, 280))
         font = pygame.font.SysFont('arial', 35)  # name caption
         loading_caption = font.render("Your Score: " + str(scr), False, (255, 0, 0))
         screen.blit(loading_caption, (180, 220))
