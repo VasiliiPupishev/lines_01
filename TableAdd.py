@@ -15,21 +15,22 @@ class AddRecord:
     score = 0
     Records = None
     Name = ""
+    full_list = None
 
     def __init__(self, screen, scr):
         self.Records = []
         f = open('records.txt')
-        res = []
+        self.full_list = []
         for line in f:
             try:
                 s = line.split(" ")
                 name = s[0]
                 score = int(s[1])
-                res.append(Record(name, score))
+                self.full_list.append(Record(name, score))
             except Exception:
                 continue
-        res.sort(key=lambda x: -x.score)
-        self.Records = res[:5]
+        self.full_list.sort(key=lambda x: -x.score)
+        self.Records = self.full_list[:5]
         self.start(screen, scr)
 
     def start(self, screen, scr):
@@ -48,6 +49,14 @@ class AddRecord:
                             if len(self.Name) == 0:
                                 self.Name = "unknown_player"
                             f.write("\n" + self.Name + " " + str(scr))
+                            f.close()
+                            self.full_list.append(Record(self.Name, scr))
+                            self.full_list.sort(key=lambda x: -x.score)
+                            self.Records = self.full_list[:5]
+                            self.draw(screen, scr)
+                            import time
+                            time.sleep(2)
+                            return
                     if 150 < x < 450:
                         if 270 < y < 330:
                             self.write = True

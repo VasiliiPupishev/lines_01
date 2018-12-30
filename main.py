@@ -5,6 +5,7 @@ from BallClass import Ball
 import time
 import os
 
+Stars = 3
 pygame.init()
 white = (255, 255, 255)
 screen = pygame.display.set_mode((602, 400))
@@ -32,6 +33,7 @@ def main():
             from TableAdd import AddRecord
             S = AddRecord(screen, field.Score)
             pygame.mixer.music.rewind()
+            menu()
             field = Field("record.txt")
         is_success = False
         draw_field(field)
@@ -47,7 +49,10 @@ def main():
                     load_preservation(field)
             if event.type == pygame.MOUSEBUTTONDOWN:
                 if event.button == 1:
-                    print(event.pos)
+                    x, y = event.pos
+                    if 15 < x < 45:
+                        if 365 < y < 400:
+                            print("star")
                     if len(move_list) == 0:
                         win_sound = pygame.mixer.Sound(os.path.join('Materials', "chose.wav"))
                         win_sound.play()
@@ -59,8 +64,9 @@ def main():
         if is_success:
             win_sound = pygame.mixer.Sound(os.path.join('Materials', "win.wav"))
             win_sound.play()
-            for ball in field.set_balls(field.Balls):
+            for ball in field.Next:
                 field.Balls.append(ball)
+            field.Next = field.set_balls(field.Balls)
             find_lines(field)
         pygame.display.update()
 
@@ -73,6 +79,18 @@ def draw_field(field):
     screen.blit(text, [15, 10])
     screen.blit(text1, [15, 30])
     draw_balls(field)
+    star = pygame.image.load("Materials/star.png")
+    star = pygame.transform.scale(star, (20, 20))
+    screen.blit(star, (65, 365))
+    font = pygame.font.Font(None, 30)
+    text = font.render(str(Stars), True, (255, 255, 0))
+    screen.blit(text, [90, 368])
+    text = font.render("Next: ", True, (255, 255, 255))
+    screen.blit(text, [40, 200])
+    j = 35
+    for i in field.Next:
+        screen.blit(i.Image, (j, 230))
+        j += 40
     pygame.display.flip()
 
 
@@ -96,7 +114,7 @@ def draw_animation(field, start_ball, end_ball):
         s_image = pygame.transform.scale(s_image, (37 - a, 37 - a))
         screen.blit(s_image, (195 + end_ball.X * 44 + int(a/2), 19 + end_ball.Y * 41 + int(a / 2)))
         pygame.display.update()
-        time.sleep(0.05)
+        #time.sleep(0.05)
 
 
 def menu():

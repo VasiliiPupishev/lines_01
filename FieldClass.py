@@ -14,6 +14,7 @@ class Field:
     Score = 0
     BestScore = 0
     Image = pygame.image.load(os.path.join('Materials', 'field.jpg')).convert()
+    Next = []
 
     @staticmethod
     def set_balls(old_balls):
@@ -39,11 +40,12 @@ class Field:
                     again = False
         return balls
 
-    #аниамация(+) + звуки при дествии(+) + посказки + ии для подсказок + таблица рекордов + сохранение(+) + разные типы шариков (радиус) + супершарики(проходить насквозь)
+    #аниамация(+) + звуки при дествии(+) + посказки + ии для подсказок + таблица рекордов(+) + сохранение(+) + разные типы шариков (радиус) + супершарики(проходить насквозь)
 
     def __init__(self, text_file):
         text = open(text_file, 'r')
         self.BestScore = int(text.readlines()[0])
         self.Image = pygame.transform.scale(self.Image, (602, 400))
         self.Balls = self.set_balls(self.Balls)
+        self.Next = self.set_balls(self.Balls)
 
