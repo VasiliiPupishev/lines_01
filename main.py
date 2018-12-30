@@ -29,6 +29,8 @@ def main():
                 f.write(str(field.Score))
                 f.close()
             time.sleep(2)
+            from TableAdd import AddRecord
+            S = AddRecord(screen, field.Score)
             pygame.mixer.music.rewind()
             field = Field("record.txt")
         is_success = False
@@ -111,16 +113,24 @@ def menu():
                             print("play")
                             return
                         if 180 < y < 280:
+                            table_records()
                             print("table records")
+                            print_menu()
                     if 200 < x < 400:
                         if 290 < y < 340:
                             print("exit")
                             raise SystemExit
 
 
+def table_records():
+    from TableRecords import TableRecords
+    tr = TableRecords()
+    tr.start(screen)
+
+
 def print_menu():
     font = pygame.font.Font(None, 80)
-    image = pygame.image.load("Materials/default.jpg")
+    image = pygame.image.load("Materials/fonn.jpg")
     image = pygame.transform.scale(image, (602, 400))
     screen.blit(image, (0, 0))
     text = font.render("LINES", True, (0, 0, 0))
