@@ -32,9 +32,9 @@ class TableRecords:
         im = pygame.image.load("Materials/fonn.jpg")
         im = pygame.transform.scale(im, (602, 400))
         screen.blit(im, (0, 0))
-        font = pygame.font.SysFont('arial', 40)  # name caption
+        font = pygame.font.SysFont('arial', 30)  # name caption
         loading_caption = font.render("Records", False, (0, 0, 0))
-        screen.blit(loading_caption, (230, 10))
+        screen.blit(loading_caption, (240, 5))
         pygame.display.update()
         font = pygame.font.SysFont('arial', 25)  # name caption
         i = 40
@@ -47,6 +47,9 @@ class TableRecords:
         plate = pygame.image.load("Materials/plate.png")
         plate = pygame.transform.scale(plate, (130, 40))
         screen.blit(plate, (235, 340))
+        plate = pygame.image.load("Materials/plate.png")
+        plate = pygame.transform.scale(plate, (560, 300))
+        screen.blit(plate, (20, 35))
         font = pygame.font.SysFont('arial', 25)  # name caption
         loading_caption = font.render("Back", False, (0, 0, 0))
         screen.blit(loading_caption, (270, 347))

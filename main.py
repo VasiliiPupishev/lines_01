@@ -7,7 +7,7 @@ from BallClass import Ball
 import time
 import os
 
-Stars = 3
+#Stars = 3
 pygame.init()
 white = (255, 255, 255)
 screen = pygame.display.set_mode((602, 400))
@@ -71,8 +71,11 @@ def main():
             win_sound.play()
             colors = ["red", "blue", "green", "pink", "bluelite", "yellow", "brown"]
             o = 0
-            for ball in field.set_balls(field.Balls):
-                field.Balls.append(Ball(ball.X, ball.Y, field.Next[o].Color, field.Next[o].Lives))
+            jj = field.set_balls(field.Balls)
+            for ball in jj:
+                ball = Ball(ball.X, ball.Y, field.Next[o].Color, field.Next[o].Lives)
+                field.Balls.append(ball)
+                draw_appi(ball)
                 o += 1
             field.Next.clear()
             for i in [0, 1, 2]:
@@ -84,6 +87,19 @@ def main():
                 field.Next.append(Ball(0, 0, colors[x], flag))
             find_lines(field)
         pygame.display.update()
+
+
+def draw_appi(ball):
+    a = 35
+    while a >= 7:
+        a -= 7
+        if a <= 0:
+            break
+        s_image = pygame.image.load("Materials/" + ball.Color + ".png")
+        s_image = pygame.transform.scale(s_image, (37 - a, 37 - a))
+        screen.blit(s_image, (195 + ball.X * 44 + int(a / 2), 19 + ball.Y * 41 + int(a / 2)))
+        pygame.display.update()
+        time.sleep(0.1)
 
 
 def find_star(field, start_ball):
@@ -122,7 +138,8 @@ def find_star(field, start_ball):
     im = pygame.transform.scale(im, (35, 35))
     for b in granica:
         screen.blit(im, (197 + b.X * 44, 19 + b.Y * 41))
-    #time.sleep(1)
+    pygame.display.update()
+    time.sleep(1)
 
 
 def ocr(x, y):
@@ -149,10 +166,10 @@ def draw_field(field):
     draw_balls(field)
     star = pygame.image.load("Materials/star.png")
     star = pygame.transform.scale(star, (20, 20))
-    screen.blit(star, (65, 365))
-    font = pygame.font.Font(None, 30)
-    text = font.render(str(Stars), True, (255, 255, 0))
-    screen.blit(text, [90, 368])
+    screen.blit(star, (95, 365))
+    #font = pygame.font.Font(None, 30)
+    #text = font.render(str(Stars), True, (255, 255, 0))
+    #screen.blit(text, [90, 368])
     text = font.render("Next: ", True, (255, 255, 255))
     screen.blit(text, [40, 200])
     j = 35

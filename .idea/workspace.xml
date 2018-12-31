@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/main.py" line="300" />
-    <bookmark url="file://$PROJECT_DIR$/main.py" line="416" />
+    <bookmark url="file://$PROJECT_DIR$/main.py" line="317" />
+    <bookmark url="file://$PROJECT_DIR$/main.py" line="433" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b88b16c0-8521-4a56-99da-66d6052684bd" name="Default" comment="sdfsdfsf">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FieldClass.py" beforeDir="false" afterPath="$PROJECT_DIR$/FieldClass.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TableRecords.py" beforeDir="false" afterPath="$PROJECT_DIR$/TableRecords.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/record1.TXT" beforeDir="false" afterPath="$PROJECT_DIR$/record1.TXT" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,7 +18,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/lines_01$Unittests_for_TestLines_MyTestCase.coverage" NAME="Unittests for TestLines.MyTestCase Coverage Results" MODIFIED="1538590317209" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/lines_01$main.coverage" NAME="main Coverage Results" MODIFIED="1546276330122" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/lines_01$main.coverage" NAME="main Coverage Results" MODIFIED="1546278966964" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/lines_01$Unittests_in_TestLines_py.coverage" NAME="Unittests in TestLines.py Coverage Results" MODIFIED="1546275317055" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="CoverageViewManager">
@@ -27,11 +26,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="74" column="96" selection-start-line="74" selection-start-column="96" selection-end-line="74" selection-end-column="96" />
+            <state relative-caret-position="143">
+              <caret line="168" column="24" selection-start-line="168" selection-start-column="24" selection-end-line="168" selection-end-column="24" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -76,11 +75,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/TableRecords.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="46" column="56" lean-forward="true" selection-start-line="46" selection-start-column="56" selection-end-line="46" selection-end-column="56" />
+            <state relative-caret-position="69">
+              <caret line="36" column="41" selection-start-line="36" selection-start-column="41" selection-end-line="36" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -129,8 +128,8 @@
       <find>read</find>
       <find>init</find>
       <find>BestScore</find>
-      <find>anima</find>
       <find>save</find>
+      <find>anima</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -143,13 +142,13 @@
         <option value="$USER_HOME$/.PyCharmCE2018.2/system/python_stubs/907059903/pygame/mixer.py" />
         <option value="$PROJECT_DIR$/record.TXT" />
         <option value="$PROJECT_DIR$/TestLines.py" />
-        <option value="$PROJECT_DIR$/TableRecords.py" />
         <option value="$PROJECT_DIR$/records.txt" />
         <option value="$PROJECT_DIR$/TableAdd.py" />
         <option value="$PROJECT_DIR$/BallClass.py" />
         <option value="$PROJECT_DIR$/Saves/save_001.txt" />
         <option value="$PROJECT_DIR$/FieldClass.py" />
         <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/TableRecords.py" />
       </list>
     </option>
   </component>
@@ -327,7 +326,7 @@
       <updated>1526848864835</updated>
       <workItem from="1545334549879" duration="4522000" />
       <workItem from="1545514952634" duration="1723000" />
-      <workItem from="1545905717037" duration="105396000" />
+      <workItem from="1545905717037" duration="107780000" />
     </task>
     <task id="LOCAL-00001" summary="sdfsdfsf">
       <created>1546199919240</created>
@@ -364,7 +363,14 @@
       <option name="project" value="LOCAL" />
       <updated>1546273360353</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="sdfsdfsf">
+      <created>1546276589043</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1546276589043</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -400,7 +406,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="111641000" />
+    <option name="totallyTimeSpent" value="114025000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -478,13 +484,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TableRecords.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="46" column="56" lean-forward="true" selection-start-line="46" selection-start-column="56" selection-end-line="46" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Saves/save_001.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -532,11 +531,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="74" column="96" selection-start-line="74" selection-start-column="96" selection-end-line="74" selection-end-column="96" />
+        <state relative-caret-position="143">
+          <caret line="168" column="24" selection-start-line="168" selection-start-column="24" selection-end-line="168" selection-end-column="24" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TableRecords.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="36" column="41" selection-start-line="36" selection-start-column="41" selection-end-line="36" selection-end-column="41" />
         </state>
       </provider>
     </entry>
