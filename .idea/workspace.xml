@@ -7,8 +7,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b88b16c0-8521-4a56-99da-66d6052684bd" name="Default" comment="sdfsdfsf">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/records.txt" beforeDir="false" afterPath="$PROJECT_DIR$/records.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -326,7 +324,7 @@
       <updated>1526848864835</updated>
       <workItem from="1545334549879" duration="4522000" />
       <workItem from="1545514952634" duration="1723000" />
-      <workItem from="1545905717037" duration="108247000" />
+      <workItem from="1545905717037" duration="108860000" />
     </task>
     <task id="LOCAL-00001" summary="sdfsdfsf">
       <created>1546199919240</created>
@@ -377,7 +375,14 @@
       <option name="project" value="LOCAL" />
       <updated>1546278994189</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="sdfsdfsf">
+      <created>1546279443784</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1546279443784</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -413,7 +418,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="114492000" />
+    <option name="totallyTimeSpent" value="115105000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
