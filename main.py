@@ -152,15 +152,15 @@ def print_menu():
     image = pygame.transform.scale(image, (602, 400))
     screen.blit(image, (0, 0))
     text = font.render("LINES", True, (0, 0, 0))
-    screen.blit(text, [225, 5])
+    screen.blit(text, [225, 15])
     font = pygame.font.Font(None, 60)
-    pygame.draw.rect(screen, (255, 20, 0), ((150, 70), (300, 100)))
+    pygame.draw.rect(screen, (0, 255, 255), ((150, 70), (300, 100)))
     text = font.render("Start", True, (0, 0, 0))
     screen.blit(text, [255, 100])
     pygame.draw.rect(screen, (255, 70, 0), ((150, 180), (300, 100)))
     text = font.render("Records", True, (0, 0, 0))
     screen.blit(text, [220, 210])
-    pygame.draw.rect(screen, (255, 70, 0), ((200, 290), (200, 50)))
+    pygame.draw.rect(screen, (255, 0, 0), ((200, 290), (200, 50)))
     text = font.render("Exit", True, (0, 0, 0))
     screen.blit(text, [260, 297])
     pygame.display.update()
@@ -239,8 +239,8 @@ def find_lines(field):
         field_by_string.append([])
         field_by_colon.append([])
         for j in range(9):
-            field_by_string[i].append(Ball(i, j, "default"))
-            field_by_colon[i].append(Ball(i, j, "default"))
+            field_by_string[i].append(Ball(i, j, "default", False))
+            field_by_colon[i].append(Ball(i, j, "default", False))
     for ball in field.Balls:
         field_by_string[ball.Y][ball.X] = ball
         field_by_colon[ball.X][ball.Y] = ball
@@ -278,6 +278,7 @@ def find_lines(field):
             if len(lines) >= count:
                 for ball in lines:
                     field.Balls.remove(ball)
+                field.Score = field.Score + 2 ** len(lines)
             lines.clear()
 
 
@@ -295,7 +296,7 @@ def try_move(moves, field11):
         return False
     flag = True
     start_ball = None
-    end_ball = Ball(x1, y1, "default")
+    end_ball = Ball(x1, y1, "default", False)
     for ball in balls:
         if ball.X == x and ball.Y == y:
             start_ball = ball
@@ -308,13 +309,20 @@ def try_move(moves, field11):
     for i in range(9):
         field.append([])
         for j in range(9):
-            field[i].append(Ball(i, j, "default"))
+            field[i].append(Ball(i, j, "default", False))
     for ball in balls:
         field[ball.X][ball.Y] = ball
+    if start_ball.Lives:
+        if field[x1][y1].Color == "default":
+            new_ball = Ball(x1, y1, start_ball.Color, start_ball.Lives)
+            balls.append(new_ball)
+            balls.remove(start_ball)
+            draw_animation(field11, start_ball, new_ball)
+            return True
     visited = bfs(field, start_ball)
     for ball in visited:
         if ball.X == x1 and ball.Y == y1:
-            new_ball = Ball(x1, y1, start_ball.Color)
+            new_ball = Ball(x1, y1, start_ball.Color, start_ball.Lives)
             balls.append(new_ball)
             balls.remove(start_ball)
             draw_animation(field11, start_ball, new_ball)
@@ -326,7 +334,7 @@ def try_move(moves, field11):
 
 def bfs(field, start):
     visited = []
-    start = Ball(start.X, start.Y, "default")
+    start = Ball(start.X, start.Y, "default", False)
     queue = [start]
     while queue:
         point = queue.pop(0)

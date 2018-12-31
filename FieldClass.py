@@ -2,6 +2,7 @@ import random
 import pygame
 import os
 from BallClass import Ball
+import random
 
 pygame.init()
 screen = pygame.display.set_mode((900, 900))
@@ -36,8 +37,12 @@ class Field:
                         flag = True
                         break
                 if flag is False:
-                    balls.append(Ball(x, y, colors[color]))
+                    balls.append(Ball(x, y, colors[color], False))
                     again = False
+        for ball in balls:
+            s = random.randint(1, 100)
+            if s > 90:
+                ball.change_live(True)
         return balls
 
     #аниамация(+) + звуки при дествии(+) + посказки + ии для подсказок + таблица рекордов(+) + сохранение(+) + разные типы шариков (радиус) + супершарики(проходить насквозь)

@@ -10,9 +10,11 @@ class Ball:
     Y = 0
     Color = ""
     Image = pygame.image.load(os.path.join('Materials', 'default.jpg')).convert_alpha()
+    Lives = False
 
-    def __init__(self, x, y, color):
+    def __init__(self, x, y, color, lives):
         self.Color = color
+        self.Lives = lives
         self.X = x
         self.Y = y
         name = ""
@@ -32,5 +34,13 @@ class Ball:
             name = "pink.png"
         if color == "default":
             return
+        if self.Lives:
+            name = "s" + name
         self.Image = pygame.image.load(os.path.join('Materials', name)).convert_alpha()
         self.Image = pygame.transform.scale(self.Image, (35, 35))
+
+    def change_live(self, bul):
+        self.Lives = bul
+        if bul:
+            self.Image = pygame.image.load(os.path.join('Materials', "s" + self.Color + ".png")).convert_alpha()
+            self.Image = pygame.transform.scale(self.Image, (35, 35))
