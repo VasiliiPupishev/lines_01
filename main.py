@@ -25,6 +25,14 @@ def main():
     move_list = []
     while done:
         if len(field.Balls) >= 78:
+            im = pygame.image.load("Materials/fonn.jpg")
+            im = pygame.transform.scale(im, (350, 100))
+            screen.blit(im, (180, 130))
+            font = pygame.font.SysFont('arial', 50)  # name caption
+            loading_caption = font.render("GAME OVER", False, (255, 0, 0))
+            screen.blit(loading_caption, (200, 150))
+            pygame.display.update()
+            time.sleep(1)
             if field.Score > field.BestScore:
                 win_sound = pygame.mixer.Sound(os.path.join('Materials', "record.wav"))
                 win_sound.play()
@@ -167,9 +175,6 @@ def draw_field(field):
     star = pygame.image.load("Materials/star.png")
     star = pygame.transform.scale(star, (20, 20))
     screen.blit(star, (95, 365))
-    #font = pygame.font.Font(None, 30)
-    #text = font.render(str(Stars), True, (255, 255, 0))
-    #screen.blit(text, [90, 368])
     text = font.render("Next: ", True, (255, 255, 255))
     screen.blit(text, [40, 200])
     j = 35
