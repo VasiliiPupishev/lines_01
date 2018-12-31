@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/main.py" line="288" />
-    <bookmark url="file://$PROJECT_DIR$/main.py" line="404" />
+    <bookmark url="file://$PROJECT_DIR$/main.py" line="300" />
+    <bookmark url="file://$PROJECT_DIR$/main.py" line="416" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b88b16c0-8521-4a56-99da-66d6052684bd" name="Default" comment="sdfsdfsf">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FieldClass.py" beforeDir="false" afterPath="$PROJECT_DIR$/FieldClass.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/record1.TXT" beforeDir="false" afterPath="$PROJECT_DIR$/record1.TXT" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,8 +19,8 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/lines_01$Unittests_for_TestLines_MyTestCase.coverage" NAME="Unittests for TestLines.MyTestCase Coverage Results" MODIFIED="1538590317209" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/lines_01$main.coverage" NAME="main Coverage Results" MODIFIED="1546272747879" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/lines_01$Unittests_in_TestLines_py.coverage" NAME="Unittests in TestLines.py Coverage Results" MODIFIED="1546273335243" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/lines_01$main.coverage" NAME="main Coverage Results" MODIFIED="1546276330122" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/lines_01$Unittests_in_TestLines_py.coverage" NAME="Unittests in TestLines.py Coverage Results" MODIFIED="1546275317055" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="CoverageViewManager">
     <option name="myElementSize" value="282" />
@@ -29,8 +30,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3979">
-              <caret line="254" column="34" selection-start-line="254" selection-start-column="34" selection-end-line="254" selection-end-column="34" />
+            <state relative-caret-position="187">
+              <caret line="74" column="96" selection-start-line="74" selection-start-column="96" selection-end-line="74" selection-end-column="96" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -41,8 +42,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FieldClass.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="157">
-              <caret line="47" column="115" lean-forward="true" selection-start-line="47" selection-start-column="115" selection-end-line="47" selection-end-column="115" />
+            <state relative-caret-position="174">
+              <caret line="42" column="12" selection-start-line="42" selection-start-column="12" selection-end-line="43" selection-end-column="22" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -147,8 +148,8 @@
         <option value="$PROJECT_DIR$/TableAdd.py" />
         <option value="$PROJECT_DIR$/BallClass.py" />
         <option value="$PROJECT_DIR$/Saves/save_001.txt" />
-        <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/FieldClass.py" />
+        <option value="$PROJECT_DIR$/main.py" />
       </list>
     </option>
   </component>
@@ -205,7 +206,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in TestLines.py">
+  <component name="RunManager" selected="Python.main">
     <configuration name="DialogClass" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="lines_01" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -306,8 +307,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Unittests in TestLines.py" />
         <item itemvalue="Python.main" />
+        <item itemvalue="Python tests.Unittests in TestLines.py" />
         <item itemvalue="Python tests.Unittests for TestLines.MyTestCase" />
         <item itemvalue="Python.DialogClass" />
         <item itemvalue="Python tests.Unittests for TestLines.MyTestCase.test_no" />
@@ -326,7 +327,7 @@
       <updated>1526848864835</updated>
       <workItem from="1545334549879" duration="4522000" />
       <workItem from="1545514952634" duration="1723000" />
-      <workItem from="1545905717037" duration="102361000" />
+      <workItem from="1545905717037" duration="105396000" />
     </task>
     <task id="LOCAL-00001" summary="sdfsdfsf">
       <created>1546199919240</created>
@@ -356,13 +357,17 @@
       <option name="project" value="LOCAL" />
       <updated>1546267109829</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="sdfsdfsf">
+      <created>1546273360353</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1546273360353</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_for_TestLines_MyTestCase - 2018.10.03 at 11h 01m 53s.xml">
-      <configuration name="Unittests for TestLines.MyTestCase" configurationId="tests" />
-    </history-entry>
     <history-entry file="Unittests_for_TestLines_MyTestCase - 2018.10.03 at 11h 02m 13s.xml">
       <configuration name="Unittests for TestLines.MyTestCase" configurationId="tests" />
     </history-entry>
@@ -390,9 +395,12 @@
     <history-entry file="Unittests_in_TestLines_py - 2018.12.31 at 21h 22m 17s.xml">
       <configuration name="Unittests in TestLines.py" configurationId="tests" />
     </history-entry>
+    <history-entry file="Unittests_in_TestLines_py - 2018.12.31 at 21h 55m 23s.xml">
+      <configuration name="Unittests in TestLines.py" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="108606000" />
+    <option name="totallyTimeSpent" value="111641000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -407,12 +415,12 @@
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14599092" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14599092" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49946696" weight="0.32952183" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7322239" visible="true" weight="0.29800308" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.7322239" visible="true" weight="0.29800308" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49621785" weight="0.39784947" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -501,16 +509,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FieldClass.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="47" column="115" lean-forward="true" selection-start-line="47" selection-start-column="115" selection-end-line="47" selection-end-column="115" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/TestLines.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1496">
@@ -522,10 +520,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/FieldClass.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="42" column="12" selection-start-line="42" selection-start-column="12" selection-end-line="43" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3979">
-          <caret line="254" column="34" selection-start-line="254" selection-start-column="34" selection-end-line="254" selection-end-column="34" />
+        <state relative-caret-position="187">
+          <caret line="74" column="96" selection-start-line="74" selection-start-column="96" selection-end-line="74" selection-end-column="96" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>

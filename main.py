@@ -1,3 +1,5 @@
+import random
+
 import pygame
 
 from FieldClass import Field
@@ -67,9 +69,19 @@ def main():
         if is_success:
             win_sound = pygame.mixer.Sound(os.path.join('Materials', "win.wav"))
             win_sound.play()
-            for ball in field.Next:
-                field.Balls.append(ball)
-            field.Next = field.set_balls(field.Balls)
+            colors = ["red", "blue", "green", "pink", "bluelite", "yellow", "brown"]
+            o = 0
+            for ball in field.set_balls(field.Balls):
+                field.Balls.append(Ball(ball.X, ball.Y, field.Next[o].Color, field.Next[o].Lives))
+                o += 1
+            field.Next.clear()
+            for i in [0, 1, 2]:
+                x = random.randint(0, 6)
+                s = random.randint(1, 100)
+                flag = False
+                if s > 90:
+                    flag = True
+                field.Next.append(Ball(0, 0, colors[x], flag))
             find_lines(field)
         pygame.display.update()
 
