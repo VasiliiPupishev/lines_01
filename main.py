@@ -56,7 +56,6 @@ def main():
                                 start_x, start_y = move_list[0]
                                 (x, y) = get_position(start_x, start_y)
                                 find_star(field, field.get_ball(x, y))
-                                print("star")
                     if len(move_list) == 0:
                         win_sound = pygame.mixer.Sound(os.path.join('Materials', "chose.wav"))
                         win_sound.play()
@@ -76,10 +75,6 @@ def main():
 
 
 def find_star(field, start_ball):
-    print(start_ball.Color)
-
-    print(start_ball.X)
-    print(start_ball.Y)
     field1 = []
     for i in range(9):
         field1.append([])
@@ -101,18 +96,21 @@ def find_star(field, start_ball):
     flag = False
     for ball in visited:
         x, y = ball.X, ball.Y
+        if x == start_ball.X and y == start_ball.Y:
+            continue
         oc = ocr(x, y)
         for x1, y1 in oc:
+            if x1 == start_ball.X and y1 == start_ball.Y:
+                break
             if field1[x1][y1].Color == start_ball.Color:
                 granica.append(ball)
                 flag = True
                 break
+    im = pygame.image.load("Materials/str.png")
+    im = pygame.transform.scale(im, (35, 35))
     for b in granica:
-        print("------")
-        print(b.X)
-        print(b.Y)
-
-
+        screen.blit(im, (197 + b.X * 44, 19 + b.Y * 41))
+    #time.sleep(1)
 
 
 def ocr(x, y):
@@ -232,6 +230,7 @@ def load_preservation(field):
         strings = all_information.split('\n')
         for i in range(9):
             for j in range(9):
+                lives = False
                 color = ""
                 if strings[i][j] == "#":
                     continue
@@ -249,8 +248,29 @@ def load_preservation(field):
                     color = "pink"
                 if strings[i][j] == "B":
                     color = "blue"
+                if strings[i][j] == "1":
+                    color = "red"
+                    lives = True
+                if strings[i][j] == "2":
+                    color = "green"
+                    lives = True
+                if strings[i][j] == "3":
+                    color = "blue"
+                    lives = True
+                if strings[i][j] == "4":
+                    color = "pink"
+                    lives = True
+                if strings[i][j] == "5":
+                    color = "yellow"
+                    lives = True
+                if strings[i][j] == "6":
+                    color = "brown"
+                    lives = True
+                if strings[i][j] == "7":
+                    color = "liteblue"
+                    lives = True
                 if color != "":
-                    new_balls.append(Ball(j, i, color))
+                    new_balls.append(Ball(j, i, color, lives))
         field.Score = int(strings[9])
         field.Balls = new_balls
     except Exception:
@@ -272,19 +292,40 @@ def make_preservation(field):  # saving game
             if full_field[i][j].Color == "default":
                 file.write("#")
             if full_field[i][j].Color == "red":
-                file.write("R")
+                if full_field[i][j].Lives:
+                    file.write("1")
+                else:
+                    file.write("R")
             if full_field[i][j].Color == "green":
-                file.write("G")
+                if full_field[i][j].Lives:
+                    file.write("2")
+                else:
+                    file.write("G")
             if full_field[i][j].Color == "blue":
-                file.write("B")
+                if full_field[i][j].Lives:
+                    file.write("3")
+                else:
+                    file.write("B")
             if full_field[i][j].Color == "pink":
-                file.write("P")
+                if full_field[i][j].Lives:
+                    file.write("4")
+                else:
+                    file.write("P")
             if full_field[i][j].Color == "yellow":
-                file.write("Y")
+                if full_field[i][j].Lives:
+                    file.write("5")
+                else:
+                    file.write("Y")
             if full_field[i][j].Color == "brown":
-                file.write("W")
+                if full_field[i][j].Lives:
+                    file.write("6")
+                else:
+                    file.write("W")
             if full_field[i][j].Color == "bluelite":
-                file.write("L")
+                if full_field[i][j].Lives:
+                    file.write("7")
+                else:
+                    file.write("L")
         file.write('\n')
     file.write(str(field.Score))
     file.close()

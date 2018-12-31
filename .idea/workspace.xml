@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/main.py" line="268" />
-    <bookmark url="file://$PROJECT_DIR$/main.py" line="363" />
+    <bookmark url="file://$PROJECT_DIR$/main.py" line="288" />
+    <bookmark url="file://$PROJECT_DIR$/main.py" line="404" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b88b16c0-8521-4a56-99da-66d6052684bd" name="Default" comment="sdfsdfsf">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FieldClass.py" beforeDir="false" afterPath="$PROJECT_DIR$/FieldClass.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saves/save_001.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Saves/save_001.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/records.txt" beforeDir="false" afterPath="$PROJECT_DIR$/records.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,8 +18,8 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/lines_01$Unittests_for_TestLines_MyTestCase.coverage" NAME="Unittests for TestLines.MyTestCase Coverage Results" MODIFIED="1538590317209" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/lines_01$main.coverage" NAME="main Coverage Results" MODIFIED="1546266614814" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/lines_01$Unittests_in_TestLines_py.coverage" NAME="Unittests in TestLines.py Coverage Results" MODIFIED="1545906047247" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/lines_01$main.coverage" NAME="main Coverage Results" MODIFIED="1546272747879" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/lines_01$Unittests_in_TestLines_py.coverage" NAME="Unittests in TestLines.py Coverage Results" MODIFIED="1546273335243" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="CoverageViewManager">
     <option name="myElementSize" value="282" />
@@ -31,8 +29,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5406">
-              <caret line="393" column="11" selection-start-line="393" selection-start-column="4" selection-end-line="393" selection-end-column="11" />
+            <state relative-caret-position="3979">
+              <caret line="254" column="34" selection-start-line="254" selection-start-column="34" selection-end-line="254" selection-end-column="34" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -41,9 +39,34 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FieldClass.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="157">
+              <caret line="47" column="115" lean-forward="true" selection-start-line="47" selection-start-column="115" selection-end-line="47" selection-end-column="115" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TestLines.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1496">
+              <caret line="88" column="46" lean-forward="true" selection-start-line="88" selection-start-column="46" selection-end-line="88" selection-end-column="46" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+                <marker date="1538590316859" expanded="true" signature="2724:2733" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BallClass.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="239">
+            <state relative-caret-position="647">
               <caret line="41" column="31" lean-forward="true" selection-start-line="41" selection-start-column="31" selection-end-line="41" selection-end-column="31" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
@@ -88,18 +111,6 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FieldClass.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1003">
-              <caret line="59" column="27" selection-start-line="59" selection-start-column="27" selection-end-line="59" selection-end-column="27" />
-              <folding>
-                <element signature="e#0#13#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -117,6 +128,8 @@
       <find>read</find>
       <find>init</find>
       <find>BestScore</find>
+      <find>anima</find>
+      <find>save</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -133,9 +146,9 @@
         <option value="$PROJECT_DIR$/records.txt" />
         <option value="$PROJECT_DIR$/TableAdd.py" />
         <option value="$PROJECT_DIR$/BallClass.py" />
-        <option value="$PROJECT_DIR$/FieldClass.py" />
         <option value="$PROJECT_DIR$/Saves/save_001.txt" />
         <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/FieldClass.py" />
       </list>
     </option>
   </component>
@@ -192,7 +205,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager" selected="Python tests.Unittests in TestLines.py">
     <configuration name="DialogClass" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="lines_01" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -293,8 +306,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.main" />
         <item itemvalue="Python tests.Unittests in TestLines.py" />
+        <item itemvalue="Python.main" />
         <item itemvalue="Python tests.Unittests for TestLines.MyTestCase" />
         <item itemvalue="Python.DialogClass" />
         <item itemvalue="Python tests.Unittests for TestLines.MyTestCase.test_no" />
@@ -313,7 +326,7 @@
       <updated>1526848864835</updated>
       <workItem from="1545334549879" duration="4522000" />
       <workItem from="1545514952634" duration="1723000" />
-      <workItem from="1545905717037" duration="96114000" />
+      <workItem from="1545905717037" duration="102361000" />
     </task>
     <task id="LOCAL-00001" summary="sdfsdfsf">
       <created>1546199919240</created>
@@ -336,13 +349,17 @@
       <option name="project" value="LOCAL" />
       <updated>1546256921790</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="sdfsdfsf">
+      <created>1546267109829</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1546267109829</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_for_TestLines_MyTestCase - 2018.10.03 at 11h 01m 46s.xml">
-      <configuration name="Unittests for TestLines.MyTestCase" configurationId="tests" />
-    </history-entry>
     <history-entry file="Unittests_for_TestLines_MyTestCase - 2018.10.03 at 11h 01m 53s.xml">
       <configuration name="Unittests for TestLines.MyTestCase" configurationId="tests" />
     </history-entry>
@@ -370,9 +387,12 @@
     <history-entry file="Unittests_in_TestLines_py - 2018.12.27 at 15h 20m 49s.xml">
       <configuration name="Unittests in TestLines.py" configurationId="tests" />
     </history-entry>
+    <history-entry file="Unittests_in_TestLines_py - 2018.12.31 at 21h 22m 17s.xml">
+      <configuration name="Unittests in TestLines.py" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="102359000" />
+    <option name="totallyTimeSpent" value="108606000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -387,12 +407,12 @@
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14599092" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14599092" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49946696" weight="0.32952183" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.7322239" visible="true" weight="0.29800308" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7322239" visible="true" weight="0.29800308" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49621785" weight="0.39784947" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -423,17 +443,6 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/DialogClass.py" />
     <entry file="file://$USER_HOME$/.PyCharmCE2018.2/system/python_stubs/907059903/pygame/mixer.py" />
-    <entry file="file://$PROJECT_DIR$/TestLines.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1122">
-          <caret line="66" column="35" selection-start-line="66" selection-start-column="35" selection-end-line="66" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-            <marker date="1538590316859" expanded="true" signature="2724:2733" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/records">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -454,13 +463,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/records.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="10" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/TableAdd.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="307">
@@ -475,26 +477,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BallClass.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="41" column="31" lean-forward="true" selection-start-line="41" selection-start-column="31" selection-end-line="41" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FieldClass.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1003">
-          <caret line="59" column="27" selection-start-line="59" selection-start-column="27" selection-end-line="59" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Saves/save_001.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -502,10 +484,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/BallClass.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="647">
+          <caret line="41" column="31" lean-forward="true" selection-start-line="41" selection-start-column="31" selection-end-line="41" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/records.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="10" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FieldClass.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="47" column="115" lean-forward="true" selection-start-line="47" selection-start-column="115" selection-end-line="47" selection-end-column="115" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestLines.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1496">
+          <caret line="88" column="46" lean-forward="true" selection-start-line="88" selection-start-column="46" selection-end-line="88" selection-end-column="46" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+            <marker date="1538590316859" expanded="true" signature="2724:2733" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5406">
-          <caret line="393" column="11" selection-start-line="393" selection-start-column="4" selection-end-line="393" selection-end-column="11" />
+        <state relative-caret-position="3979">
+          <caret line="254" column="34" selection-start-line="254" selection-start-column="34" selection-end-line="254" selection-end-column="34" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
