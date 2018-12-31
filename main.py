@@ -50,9 +50,13 @@ def main():
             if event.type == pygame.MOUSEBUTTONDOWN:
                 if event.button == 1:
                     x, y = event.pos
-                    if 15 < x < 45:
+                    if 65 < x < 95:
                         if 365 < y < 400:
-                            print("star")
+                            if len(move_list) == 1:
+                                start_x, start_y = move_list[0]
+                                (x, y) = get_position(start_x, start_y)
+                                find_star(field, field.get_ball(x, y))
+                                print("star")
                     if len(move_list) == 0:
                         win_sound = pygame.mixer.Sound(os.path.join('Materials', "chose.wav"))
                         win_sound.play()
@@ -69,6 +73,60 @@ def main():
             field.Next = field.set_balls(field.Balls)
             find_lines(field)
         pygame.display.update()
+
+
+def find_star(field, start_ball):
+    print(start_ball.Color)
+
+    print(start_ball.X)
+    print(start_ball.Y)
+    field1 = []
+    for i in range(9):
+        field1.append([])
+        for j in range(9):
+            field1[i].append(Ball(i, j, "default", False))
+    for ball in field.Balls:
+        field1[ball.X][ball.Y] = ball
+    visited = bfs(field1, start_ball)
+
+    class Point:
+        x = 0
+        y = 0
+
+        def __init__(self, f, a):
+            self.x = f
+            self.y = a
+
+    granica = []
+    flag = False
+    for ball in visited:
+        x, y = ball.X, ball.Y
+        oc = ocr(x, y)
+        for x1, y1 in oc:
+            if field1[x1][y1].Color == start_ball.Color:
+                granica.append(ball)
+                flag = True
+                break
+    for b in granica:
+        print("------")
+        print(b.X)
+        print(b.Y)
+
+
+
+
+def ocr(x, y):
+    res = []
+    for i in [-1, 0, 1]:
+        for j in [-1, 0, 1]:
+            if i == 0 and j == 0:
+                continue
+            if abs(i) + abs(j) > 1:
+                continue
+            if x + i > 8 or y + j > 8:
+                continue
+            res.append((x + i, y + j))
+    return res
 
 
 def draw_field(field):
@@ -110,11 +168,11 @@ def draw_animation(field, start_ball, end_ball):
         e_image = pygame.image.load("Materials/" + start_ball.Color + ".png")
         e_image = pygame.transform.scale(e_image, (a, a))
         screen.blit(defa, (197 + end_ball.X * 44, 19 + end_ball.Y * 41))
-        screen.blit(e_image, (197 + start_ball.X * 44 - int(a/2) + 20, 19 + start_ball.Y * 41 - int(a/2) + 20))
+        screen.blit(e_image, (197 + start_ball.X * 44 - int(a / 2) + 20, 19 + start_ball.Y * 41 - int(a / 2) + 20))
         s_image = pygame.transform.scale(s_image, (37 - a, 37 - a))
-        screen.blit(s_image, (195 + end_ball.X * 44 + int(a/2), 19 + end_ball.Y * 41 + int(a / 2)))
+        screen.blit(s_image, (195 + end_ball.X * 44 + int(a / 2), 19 + end_ball.Y * 41 + int(a / 2)))
         pygame.display.update()
-        #time.sleep(0.05)
+        # time.sleep(0.05)
 
 
 def menu():
@@ -199,7 +257,7 @@ def load_preservation(field):
         return
 
 
-def make_preservation(field):  #saving game
+def make_preservation(field):  # saving game
     full_field = []
     for i in range(9):
         full_field.append([])
@@ -372,7 +430,7 @@ def move_animation(ball, end_x, end_y):
 
 
 def get_position(x, y):
-    return int((x - 195)/44), int((y - 18)/41)
+    return int((x - 195) / 44), int((y - 18) / 41)
 
 
 def draw_balls(field):

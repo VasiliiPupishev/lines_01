@@ -45,7 +45,7 @@ class Field:
                 ball.change_live(True)
         return balls
 
-    #аниамация(+) + звуки при дествии(+) + посказки + ии для подсказок + таблица рекордов(+) + сохранение(+) + разные типы шариков (радиус) + супершарики(проходить насквозь)
+    #аниамация(+) + звуки при дествии(+) + посказки + ии для подсказок + таблица рекордов(+) + сохранение(+) + разные типы шариков (радиус) + супершарики(проходить насквозь)(+)
 
     def __init__(self, text_file):
         text = open(text_file, 'r')
@@ -53,4 +53,9 @@ class Field:
         self.Image = pygame.transform.scale(self.Image, (602, 400))
         self.Balls = self.set_balls(self.Balls)
         self.Next = self.set_balls(self.Balls)
+
+    def get_ball(self, x, y):
+        for ball in self.Balls:
+            if x == ball.X and y == ball.Y:
+                return ball
 
